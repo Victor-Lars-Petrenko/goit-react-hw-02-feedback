@@ -1,4 +1,3 @@
-import { Notification } from './Notification/Notification';
 import { Caption, Paragraph, EmojiItem, List } from './Statistics.styled';
 import { SlLike, SlDislike } from 'react-icons/sl';
 import { BsEmojiNeutral } from 'react-icons/bs';
@@ -13,7 +12,7 @@ export const Statistics = ({
   return (
     <>
       <Caption>Statistics</Caption>
-      {Boolean(total) ? (
+      {Boolean(total) && (
         <List>
           <EmojiItem>
             <SlLike />
@@ -34,8 +33,6 @@ export const Statistics = ({
             <Paragraph>Positive feedback: {positivePercentage}%</Paragraph>
           </li>
         </List>
-      ) : (
-        <Notification message="There is no feedback" />
       )}
     </>
   );
