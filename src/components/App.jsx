@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { Section } from './Section/Section';
-import { Statistics } from './Statistics/Statistics';
-import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
-import { Notification } from './Notification/Notification';
+import { Section } from './Section';
+import { Statistics } from './Statistics';
+import { FeedbackOptions } from './FeedbackOptions';
+import { Notification } from './Notification';
 
 export class App extends Component {
   state = {
@@ -30,6 +30,8 @@ export class App extends Component {
   };
 
   render() {
+    const { good, neutral, bad } = this.state;
+
     return (
       <Section title="Expresso">
         <FeedbackOptions
@@ -37,9 +39,9 @@ export class App extends Component {
           onLeaveFeedback={this.onLeaveFeedback}
         ></FeedbackOptions>
         <Statistics
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
+          good={good}
+          neutral={neutral}
+          bad={bad}
           total={this.countTotalFeedback()}
           positivePercentage={this.countPositiveFeedbackPercentage()}
         />

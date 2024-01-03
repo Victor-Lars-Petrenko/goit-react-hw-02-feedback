@@ -6,6 +6,7 @@ export const Button = styled.button`
   border: none;
   padding: 4px 12px;
   border-radius: 50%;
+  cursor: pointer;
 `;
 
 export const BtnList = styled.ul`
