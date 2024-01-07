@@ -1,4 +1,4 @@
-import { Caption, Paragraph, EmojiItem, List } from './Statistics.styled';
+import { Paragraph, EmojiItem, List } from './Statistics.styled';
 import { SlLike, SlDislike } from 'react-icons/sl';
 import { BsEmojiNeutral } from 'react-icons/bs';
 
@@ -11,7 +11,6 @@ export const Statistics = ({
 }) => {
   return (
     <>
-      <Caption>Statistics</Caption>
       {Boolean(total) && (
         <List>
           <EmojiItem>

@@ -1,9 +1,9 @@
-import { Heading, Block } from './Section.styled';
+import { Caption, Block } from './Section.styled';
 
 export const Section = ({ title, children }) => {
   return (
     <Block>
-      <Heading>{title}</Heading>
+      <Caption>{title}</Caption>
       {children}
     </Block>
   );

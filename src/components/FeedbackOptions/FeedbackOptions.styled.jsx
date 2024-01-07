@@ -14,12 +14,3 @@ export const BtnList = styled.ul`
   display: flex;
   gap: 4px;
 `;
-
-export const Caption = styled.h2`
-  color: brown;
-  margin-bottom: 16px;
-`;
-
-export const Wrapper = styled.div`
-  margin-bottom: 20px;
-`;

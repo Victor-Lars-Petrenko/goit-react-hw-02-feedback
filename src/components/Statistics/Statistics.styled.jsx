@@ -1,10 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Caption = styled.h2`
-  color: brown;
-  margin-bottom: 16px;
-`;
-
 export const Paragraph = styled.p`
   color: SaddleBrown;
   text-align: start;
